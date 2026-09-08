@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff5c8a" />
+    <meta
+      name="description"
+      content="A two-day countdown to Maanu turning 28, made with love by Vivek."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maanu turns 28 ♡" />
+    <meta property="og:description" content="A little birthday countdown from Vivek—made especially for Maanu." />
+    <meta property="og:url" content="https://vivekshokeen97-hue.github.io/maanu-birthday/" />
+    <meta property="og:image" content="https://vivekshokeen97-hue.github.io/maanu-birthday/assets/share-preview.jpg?v=3" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1242" />
+    <meta property="og:image:height" content="2208" />
+    <meta property="og:image:alt" content="Vivek and Mansi together on their Bali honeymoon" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Maanu turns 28 · The birthday countdown ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Italiana&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <div class="intro" id="intro">
+      <div class="intro__glow" aria-hidden="true"></div>
+      <div class="gift" aria-hidden="true">
+        <span class="gift__bow gift__bow--left"></span>
+        <span class="gift__bow gift__bow--right"></span>
+        <span class="gift__lid"></span>
+        <span class="gift__box"></span>
+      </div>
+      <p class="eyebrow">Special delivery for Maanu</p>
+      <h1>Mansi</h1>
+      <p class="intro__copy">A little countdown to 28—and to your first birthday as my wife.</p>
+      <button class="button button--primary" id="openGift" type="button">
+        <span>Open your surprise</span>
+        <span aria-hidden="true">✦</span>
+      </button>
+      <p class="tiny-note">Sound on for the full experience ♪</p>
+    </div>
+
+    <main id="birthdayWorld" inert>
+      <nav class="nav" aria-label="Birthday world navigation">
+        <a class="nav__brand" href="#top" aria-label="Back to the beginning">M <span>♡</span> V</a>
+        <div class="nav__progress" aria-hidden="true"><span id="progressBar"></span></div>
+        <button class="sound-button" id="soundButton" type="button" aria-pressed="true">
+          <span class="sound-button__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sound-button__label">Sound on</span>
+        </button>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero__sky" aria-hidden="true">
+          <span class="cloud cloud--one"></span>
+          <span class="cloud cloud--two"></span>
+          <span class="floating-heart floating-heart--one">♡</span>
+          <span class="floating-heart floating-heart--two">♡</span>
+        </div>
+        <div class="hero__arch">
+          <img src="assets/dream-arch.webp" alt="An ornate dreamlike arch floating above the clouds" />
+          <div class="hero__message">
+            <p class="eyebrow" id="countdownKicker">The countdown to 10 September</p>
+            <h2>Maanu turns<br /><em>twenty-eight.</em></h2>
+            <div class="countdown" id="countdown" aria-label="Time remaining until Maanu's birthday">
+              <span><strong id="countdownDays">02</strong><small>days</small></span>
+              <i>:</i>
+              <span><strong id="countdownHours">00</strong><small>hours</small></span>
+              <i>:</i>
+              <span><strong id="countdownMinutes">00</strong><small>mins</small></span>
+              <i>:</i>
+              <span><strong id="countdownSeconds">00</strong><small>secs</small></span>
+            </div>
+            <p>Two dates, one beautiful chapter:<br />22 July ♡ 10 September</p>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#story">
+          <span>Come inside</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chapter one</p>
+          <h2>Firsts hit different<br />when they’re <em>ours.</em></h2>
+          <p>Fifty days after we said “I do” on 22 July, my favourite person turns 28. This birthday already feels different—because now I get to celebrate my wife.</p>
+        </div>
+
+        <div class="polaroid-stack reveal" id="photoStack">
+          <article class="polaroid polaroid--one" tabindex="0">
+            <img src="assets/memories/bali-01.webp" loading="lazy" decoding="async" alt="Vivek and Mansi smiling together on a rainy day" />
+            <p>Our first monsoon as us</p>
+          </article>
+          <article class="polaroid polaroid--two" tabindex="0">
+            <img src="assets/memories/bali-04.webp" loading="lazy" decoding="async" alt="Vivek and Mansi sitting together after their wedding" />
+            <p>22 July made us forever</p>
+          </article>
+          <article class="polaroid polaroid--three" tabindex="0">
+            <img src="assets/memories/bali-03.webp" loading="lazy" decoding="async" alt="Vivek and Mansi making a playful face together" />
+            <p>My favourite kind of chaos</p>
+          </article>
+        </div>
+        <p class="tap-note reveal">Tap the photos to shuffle the memories</p>
+      </section>
+
+      <section class="reasons section" id="reasons">
+        <div class="section-heading section-heading--light reveal">
+          <p class="eyebrow">Twenty-eight looks beautiful on you</p>
+          <h2>The Maanu magic<br /><em>I adore.</em></h2>
+        </div>
+
+        <div class="reason-grid">
+          <button class="reason-card reveal" type="button">
+            <span class="reason-card__number">01</span>
+            <span class="reason-card__front">Those beautiful, big eyes I could get lost in.</span>
+            <span class="reason-card__back">Still my favourite view—in Bali, at home, anywhere.</span>
+            <span class="reason-card__hint">tap to reveal</span>
+          </button>
+          <button class="reason-card reveal" type="button">
+            <span class="reason-card__number">02</span>
+            <span class="reason-card__front">A heart and nature that make every room warmer.</span>
+            <span class="reason-card__back">Your goodness is the most beautiful thing about you.</span>
+            <span class="reason-card__hint">tap to reveal</span>
+          </button>
+          <button class="reason-card reveal" type="button">
+            <span class="reason-card__number">03</span>
+            <span class="reason-card__front">The kind of beauty that catches me off guard.</span>
+            <span class="reason-card__back">You’re gorgeous, Maanu. Yes, I’m still staring.</span>
+            <span class="reason-card__hint">tap to reveal</span>
+          </button>
+          <button class="reason-card reveal" type="button">
+            <span class="reason-card__number">04</span>
+            <span class="reason-card__front">The way you turned marriage into my favourite adventure.</span>
+            <span class="reason-card__back">From 22 July to forever—I’d choose you every time.</span>
+            <span class="reason-card__hint">tap to reveal</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="honeymoon section" id="honeymoon">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Postcard from paradise</p>
+          <h2>Our Bali<br /><em>honeymoon glow.</em></h2>
+          <p>Sunshine, silly moments, and my beautiful new wife—a few memories from the first adventure of our forever.</p>
+        </div>
+
+        <div class="honeymoon-grid">
+          <figure class="honeymoon-photo honeymoon-photo--large reveal">
+            <img src="assets/memories/memory-05.webp" loading="lazy" decoding="async" alt="Vivek and Mansi wearing sunglasses together during their Bali honeymoon" />
+            <figcaption>Bali looked good on us ♡</figcaption>
+          </figure>
+          <figure class="honeymoon-snap reveal">
+            <img src="assets/memories/bali-still-01.webp" loading="lazy" decoding="async" alt="Vivek and Mansi together among the greenery in Bali" />
+            <figcaption>Paradise was better together</figcaption>
+          </figure>
+          <figure class="honeymoon-snap reveal">
+            <img src="assets/memories/bali-still-02.webp" loading="lazy" decoding="async" alt="Vivek and Mansi dressed for an evening during their Bali honeymoon" />
+            <figcaption>My forever travel partner</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="wish section" id="wish">
+        <div class="wish__stars" aria-hidden="true"></div>
+        <div class="section-heading section-heading--light reveal">
+          <p class="eyebrow">One birthday ritual</p>
+          <h2>Close your eyes.<br /><em>Make it a good one.</em></h2>
+        </div>
+
+        <div class="cake-wrap reveal">
+          <div class="cake" aria-label="A birthday cake with one lit candle">
+            <div class="candle"><span class="flame" id="flame"></span></div>
+            <div class="cake__top"></div>
+            <div class="cake__middle"><span>happy birthday</span></div>
+            <div class="cake__bottom"></div>
+            <div class="cake__plate"></div>
+          </div>
+          <button class="button button--cream" id="blowCandle" type="button">Hold to blow out the candle</button>
+          <p class="wish__message" id="wishMessage" aria-live="polite">Your wish is safe with me ✨</p>
+        </div>
+      </section>
+
+      <section class="letter section" id="letter">
+        <div class="section-heading reveal">
+          <p class="eyebrow">One last thing</p>
+          <h2>A note from<br /><em>your husband.</em></h2>
+        </div>
+
+        <div class="envelope-wrap reveal">
+          <button class="envelope" id="envelope" type="button" aria-expanded="false">
+            <span class="envelope__back"></span>
+            <span class="envelope__letter">
+              <span class="letter__content">
+                <span>My dearest Maanu,</span>
+                <span>
+                  On 22 July, I married the woman with the prettiest big eyes, the kindest nature, and the most beautiful heart. Now, just 50 days later, I get to celebrate you turning 28—your very first birthday as my wife.
+                </span>
+                <span>
+                  From our Bali honeymoon to all the ordinary days that already feel special with you, loving you is my favourite adventure. I hope 28 brings you loud laughter, quiet peace, ridiculous fun, and every little thing your heart has been wishing for. I’ll be right beside you through all of it.
+                </span>
+                <span>Today is all yours. I love you—more than this tiny website could ever fit.</span>
+                <span class="letter__signoff">Always yours,<br /><em>Vivek ♡</em></span>
+              </span>
+            </span>
+            <span class="envelope__front"></span>
+            <span class="envelope__flap"></span>
+            <span class="envelope__seal">M·V</span>
+          </button>
+          <p class="tap-note">Tap the envelope</p>
+        </div>
+      </section>
+
+      <footer>
+        <p class="footer__tiny">The countdown is officially on</p>
+        <h2 id="footerTitle">Almost 28,<br /><em>Maanu.</em></h2>
+        <p id="footerCopy">Two more sleeps until your first birthday as my wife—and the beginning of your happiest year yet.</p>
+        <button class="button button--primary" id="replayConfetti" type="button">More confetti, please</button>
+        <p class="footer__signoff">Love, Vivek · ∞</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
